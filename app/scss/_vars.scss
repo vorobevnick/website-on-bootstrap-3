@@ -1,11 +1,9 @@
-$default-font: "roboto-example", sans-serif;
-$accent: orange;
-$text: #333;
-
-// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
-$grid-gutter-width: 30px;
-$grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
-
-$gutter: $grid-gutter-width;
+$default-font: "roboto-lt", sans-serif;
+$roboto-reg: "roboto-reg", sans-serif;
+$roboto-md: "roboto-md", sans-serif;
+$dosis-reg: "dosis-reg", sans-serif;
+$dosis-md: "dosis-md", sans-serif;
+$dosis-smd: "dosis-smd", sans-serif;
+$dosis-bd: "dosis-bd", sans-serif;
+$fontawesome: "fontawesome";
+$accent: #47a9eb;
