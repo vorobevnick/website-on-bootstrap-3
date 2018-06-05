@@ -64,4 +64,18 @@ $(function() {
         ]
     });
 
+    $(document).on('click','.js-videoPoster',function(e) {
+        e.preventDefault();
+        let poster = $(this);
+        let wrapper = poster.closest('.js-videoWrapper');
+        videoPlay(wrapper);
+    });
+
+    function videoPlay(wrapper) {
+        let iframe = wrapper.find('.js-videoIframe');
+        let src = iframe.data('src');
+        wrapper.addClass('videoWrapperActive');
+        iframe.attr('src',src);
+    }
+
 });

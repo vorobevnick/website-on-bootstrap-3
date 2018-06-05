@@ -4,22 +4,299 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  /**/
+  .social {
+    right: 15px;
+  }
+
+  .contact-info {
+    &__phone {
+      margin-right: 20px;
+    }
+  }
+
+  .slick-next {
+    margin-right: 3%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev {
+    margin-left: 3%;
+    width: 30px;
+    height: 30px;
+  }
+
+  .video_wrapper {
+    width: 430px;
+    height: 300px;
+    margin-left: 20px;
+  }
+
+  .header-product {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+
+  .subscribe-text {
+    font-size: 31px;
+    margin-top: 50px;
+  }
+
+  .form-subscribe_input {
+    width: 300px;
+  }
+
+  .card-price:after {
+    content: '';
+    transition: all 1s ease;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    border: 106px solid transparent;
+    border-top: 45px solid #ffffff;
+  }
+
+  .card-price {
+    font-size: 35px
+  }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  /**/
+  header {
+    overflow: visible;
+  }
+
+  .nav-tabs {
+    display: block;
+  }
+
+  .icon-wrap {
+    margin: 10px auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .feature-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-bottom: 20px;
+  }
+  .bottom-feature_list {
+    margin-bottom: 50px;
+  }
+
+  .right-column {
+    margin-top: 60px;
+  }
+
+  .img-wrap {
+    margin-top: 95px;
+    width: 240px;
+    height: 360px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .video_wrapper {
+    width: 555px;
+    height: 329px;
+    margin-left: 0;
+  }
+
+  .video-container {
+    margin: 0 auto 20px;
+  }
+  .subscribe-text {
+    text-align: center;
+  }
+
+  .form-subscribe {
+    margin-top: 55px;
+    text-align: center;
+  }
+
+  .form-subscribe_input {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .card {
+    width: 212px;
+  }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  /**/
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .img-wrap {
+    margin: 50px auto 0;
+  }
+
+  .button_wrap {
+    text-align: center;
+  }
+
+  .item-feature {
+    margin-bottom: 30px;
+  }
+
+  .item-feature_header {
+    text-align: center;
+  }
+
+  .item-feature_text {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .section-description {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bottom-feature_header {
+    margin-top: 30px;
+  }
+
+  .bottom-feature_text2 {
+    margin-top: 30px;
+  }
+
+  .form-subscribe {
+    margin-top: 30px;
+  }
+
+  .top-feature {
+    border-bottom: 0;
+  }
+
+  .section-header {
+    margin-top: 80px;
+  }
+
+  .section-description {
+    margin-bottom: 30px
+  }
+
+  #screenshots {
+    padding-bottom: 50px;
+  }
+
+  .top-product {
+    padding: 0;
+  }
+
+  .video-container {
+    width: 400px;
+    height: 250px;
+  }
+
+  .video_wrapper {
+    width: 400px;
+    height: 250px;
+  }
+
+  .bottom-product {
+    padding-bottom: 60px;
+  }
+
+  .img-wrap-review {
+    margin: 0 auto;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .company {
+    text-align: center;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  /**/
+  .contact-info__phone {
+    margin-right: 15px;
+    margin-left: -15px;
+  }
+
+  .video-container {
+    width: 290px;
+    height: 150px;
+  }
+
+  .video_wrapper {
+    width: 290px;
+    height: 150px;
+  }
+
+  .videoPoster {
+    &:after {
+      top: 54%;
+      left: 51%;
+    }
+  }
+
+  .header-product {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .slide-review {
+    padding: 25px 10px 20px 10px;
+  }
+
+  .img-wrap-review {
+    margin: 0 auto;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .company {
+    text-align: center;
+  }
+
+  .subscribe-text {
+    line-height: 28px;
+  }
+
+  .form-subscribe_input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-subscribe_button {
+    margin-top: 10px;
+  }
+
 }
 
 /* Custom, iPhone Retina */
