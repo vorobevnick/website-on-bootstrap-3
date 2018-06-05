@@ -596,6 +596,7 @@ header {
 		background-color: #ffffff;
 		box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .2);
 		.card-price {
+			transition: all .3s ease;
 			&:before {
 				opacity: 1;
 			}
@@ -721,5 +722,140 @@ header {
 
 .month {
 	font-size: 21px;
+}
+
+/* --------------- CONTACTS --------------- */
+.before__contacts {
+	margin-right: 25px;
+	font-family: $fontawesome;
+	color: #49a3e4;
+	position: absolute;
+	top: 0;
+	left: -25px;
+}
+
+#contacts {
+	background-color: #222222;
+	padding-top: 118px;
+	color: #ffffff;
+}
+
+.address {
+	line-height: 24px;
+	margin-bottom: 35px;
+	position: relative;
+	&:before {
+		@extend .before__contacts;
+		content: '\f015';
+	}
+}
+
+.email {
+	margin-bottom: 35px;
+	position: relative;
+	&:before {
+		@extend .before__contacts;
+		content: '\f124';
+	}
+}
+
+.site {
+	margin-bottom: 35px;
+	position: relative;
+	&:before {
+		@extend .before__contacts;
+		content: '\f0ac';
+	}
+}
+
+.phone {
+	margin-bottom: 35px;
+	position: relative;
+	&:before {
+		@extend .before__contacts;
+		content: '\f095';
+	}
+}
+
+.feedback {
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid #393939;
+		padding-left: 30px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		margin-bottom: 10px;
+		transition: all .5s ease;
+		&:focus {
+			outline: none;
+			border-color: #919191;
+			&::placeholder {
+				color: #fff;
+				opacity: 1;
+			}
+		}
+	}
+	&__text {
+		padding-left: 30px;
+		padding-top: 16px;
+		resize: none;
+		width: 100%;
+		background-color: transparent;
+		border: 1px solid #393939;
+		height: 143px;
+		margin-bottom: 10px;
+		transition: all .5s ease;
+		&:focus {
+			outline: none;
+			border-color: #919191;
+			&::placeholder {
+				color: #fff;
+				opacity: 1;
+			}
+		}
+	}
+	&__submit {
+		width: 100%;
+		margin-bottom: 120px;
+		padding-top: 15px;
+		padding-bottom: 19px;
+		background: linear-gradient(to top, #4aa8eb, #00eeea);
+		border: none;
+		transition: all .5s ease;
+		&:hover {
+			opacity: .8
+		}
+	}
+}
+
+/* --------------- FOOTER --------------- */
+footer {
+	padding-top: 60px;
+	background-color: #333333;
+}
+
+.social-icon__footer {
+	margin: 0 auto 30px;
+	position: relative;
+}
+
+.copyright {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 60px;
+}
+
+.social-footer {
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	.social-link {
+		color: #ffffff;
+		&:hover {
+			color: $accent
+		}
+	}
 }
 @import "media"; // Always at the end
