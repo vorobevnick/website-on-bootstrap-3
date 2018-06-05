@@ -335,4 +335,67 @@ header {
 	left: 0;
 }
 
+/* --------------- SCREENSHOTS --------------- */
+#screenshots {
+	background-color: #f7fafc;
+	padding-bottom: 90px;
+}
+
+.slider-screenshots {
+	margin: 20px;
+	padding: 20px;
+}
+
+.slide {
+	&-img-wrap {
+		width: 263px;
+		height: 180px;
+		margin: 0 auto;
+	}
+}
+.slick-next {
+	width: 40px;
+	height: 40px;
+	margin-right: -5%;
+	background-color: #ffffff;
+	border-radius: 50%;
+	border: 1px solid #eeeeee;
+	transition: all .5s ease;
+	&:hover {
+		background-color: #41b1eb;
+		box-shadow: 0 0 0 3px #dee1e2;
+		&:before {
+			color: #ffffff;
+		}
+	}
+	&:before {
+		content: '\f178';
+		color: #777777;
+		font-family: $fontawesome;
+		font-size: 14px;
+	}
+}
+
+.slick-prev {
+	 margin-left: -5%;
+	 width: 40px;
+	 height: 40px;
+	 background-color: #ffffff;
+	 border-radius: 50%;
+	 border: 1px solid #eeeeee;
+	 transition: all .5s ease;
+	 &:hover {
+		 background-color: #41b1eb;
+		 box-shadow: 0 0 0 3px #dee1e2;
+		 &:before {
+			 color: #ffffff;
+		 }
+	 }
+	 &:before {
+		 content: '\f177';
+		 color: #777777;
+		 font-family: $fontawesome;
+		 font-size: 14px;
+	 }
+}
 @import "media"; // Always at the end
