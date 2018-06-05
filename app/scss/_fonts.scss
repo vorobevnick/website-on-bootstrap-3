@@ -1,4 +1,10 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("roboto-reg", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-md", "../fonts/RobotoMedium/RobotoMedium");
+@include font-face("roboto-lt", "../fonts/RobotoLight/RobotoLight");
+@include font-face("dosis-reg", "../fonts/DosisRegular/DosisRegular");
+@include font-face("dosis-md", "../fonts/DosisMedium/DosisMedium");
+@include font-face("dosis-smd", "../fonts/DosisSemiBold/DosisSemiBold");
+@include font-face("dosis-bd", "../fonts/DosisBold/DosisBold");
+@include font-face("fontawesom", "../fonts/fontawesome/fontawesome");
